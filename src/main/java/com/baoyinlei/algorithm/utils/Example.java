@@ -1,28 +1,18 @@
-package com.baoyinlei.algorithm.chapter1;
-
-import com.baoyinlei.algorithm.utils.CommonUtils;
-import com.sun.scenario.animation.shared.ClipEnvelope;
-
+package com.baoyinlei.algorithm.utils;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-/**
- * @Describe: 插入排序
- * @Author: baoyinlei
- * @Date: 2020/6/10
- */
-public class Exemple1_1 {
-    public static void sort(Comparable[] source) {
-        for (int i = 0; i < source.length; i++) {
-            for (int j = i + 1; j < source.length; j++) {
-                if (less(source[i],source[j])) {
-                    exch(source,i,j);
-                }
+public class Example {
+    public static void sort(Comparable[] a) {
+        for (int i = 0; i < a.length; i++) {
+            int tiny = 0;
+            for (int j = i; j < a.length; j++) {
+
             }
         }
     }
 
-    /* compare support method */
     public static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
     }
@@ -55,7 +45,7 @@ public class Exemple1_1 {
         while (scanner.hasNextLine()) {
             String str = scanner.nextLine();
             String[] ss = str.split("\\s+");
-            ArrayList<Integer> list = new ArrayList<>();
+            List<Integer> list = new ArrayList<>();
             for (String s : ss) {
                 list.add(Integer.parseInt(s));
             }
