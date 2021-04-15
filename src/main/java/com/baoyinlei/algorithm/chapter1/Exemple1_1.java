@@ -1,8 +1,5 @@
 package com.baoyinlei.algorithm.chapter1;
 
-import com.baoyinlei.algorithm.utils.CommonUtils;
-import com.sun.scenario.animation.shared.ClipEnvelope;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
