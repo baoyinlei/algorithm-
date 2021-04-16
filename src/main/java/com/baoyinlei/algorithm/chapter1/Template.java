@@ -10,7 +10,7 @@ public class Template {
     public static void sort(Comparable[] a) {
         for (int i = 0; i < a.length; i++) {
             for (int j = i + 1; j < a.length; j++) {
-                if (less(a[i],a[j])) {
+                if (less(a[j],a[i])) {
                     exch(a,j,i);
                 }
             }
@@ -21,8 +21,8 @@ public class Template {
     }
     private static void exch(Comparable[] a, int i, int j) {
         Comparable t = a[j];
-        a[i] = a[j];
-        a[j] = t;
+        a[j] = a[i];
+        a[i] = t;
     }
     private static void show(Comparable[] a) {
         for (int i = 0; i < a.length; i++) {
